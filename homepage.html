@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Mya Jean News</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #e8e5d0;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+            color: #2b2b2b;
+        }
+        
+        .newspaper {
+            background-color: #faf8e8;
+            padding: 30px 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+        }
+        
+        .date {
+            text-align: right;
+            font-size: 14px;
+            margin-bottom: 8px;
+            border-bottom: 2px solid #000;
+            padding-bottom: 8px;
+            color: #333;
+        }
+        
+        .masthead {
+            text-align: center;
+            border-bottom: 4px solid #000;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .masthead h1 {
+            font-size: 60px;
+            font-weight: bold;
+            letter-spacing: 8px;
+            margin-bottom: 5px;
+            color: #000;
+        }
+        
+        .masthead h2 {
+            font-size: 20px;
+            color: #555;
+            font-weight: normal;
+            letter-spacing: 2px;
+            font-style: italic;
+        }
+        
+        .columns {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            align-items: start;
+        }
+        
+        .column-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .container {
+            border: 1px solid #999;
+            padding: 15px;
+            background-color: #fff;
+            font-size: 13px;
+        }
+        
+        .container h3 {
+            font-size: 16px;
+            font-style: italic;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 6px;
+            color: #000;
+            font-weight: bold;
+        }
+        
+        .container p {
+            font-size: 13px;
+            line-height: 1.65;
+            text-align: justify;
+            margin-bottom: 10px;
+            color: #2b2b2b;
+        }
+        
+        .continuation-box {
+            border: 1px solid #333;
+            padding: 6px 10px;
+            margin-top: 12px;
+            background-color: #f5f5f5;
+            text-align: right;
+        }
+        
+        .continuation-box a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 11px;
+            font-style: italic;
+        }
+        
+        .continuation-box a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Image container */
+        .container-image {
+            padding: 0;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        
+        .container-image:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+        
+        .container-image img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            border-bottom: 1px solid #999;
+        }
+        
+        .container-image .caption {
+            font-size: 11px;
+            font-style: italic;
+            color: #555;
+            padding: 10px;
+            text-align: center;
+            background-color: #fff;
+        }
+        
+        .container-image .caption a {
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .container-image .caption a:hover {
+            text-decoration: underline;
+        }
+        
+        @media (max-width: 768px) {
+            .columns {
+                grid-template-columns: 1fr;
+            }
+            
+            .masthead h1 {
+                font-size: 36px;
+                letter-spacing: 4px;
+            }
+            
+            .masthead h2 {
+                font-size: 16px;
+            }
+            
+            body {
+                padding: 10px;
+            }
+            
+            .newspaper {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="newspaper">
+        <div class="date">Wednesday, August 8, 2001</div>
+        
+        <div class="masthead">
+            <h1>The Mya Jean News</h1>
+            <h2>Ethical Storytelling in the Digital Age</h2>
+        </div>
+        
+        <div class="columns">
+            <!-- Column 1 -->
+            <div class="column-wrapper">
+                <!-- About the Editor -->
+                <div class="container">
+                    <h3>About the Editor</h3>
+                    <p>Mya Jean is a digital ethnographer and data scientist exploring the intersection of virtual spaces and human experience. With a background in statistics from the University of Michigan and a forthcoming Master's in Data Science from the University of Washington, she is a techno-fanatic and self-described cyborg feminist. </p>
+                    <p>Her professional experience includes work with JPMorgan Chase and Epic Systems, where she developed strong management and communication skills. But her true passion lies in exploring how virtual environments can shape human behavior, identity, and connection.</p>
+                    <div class="continuation-box">
+                        <a href="https://github.com/myajean808/portfolio/blob/main/Files/my resume.pdf" target="_blank">Full biography on p. 9</a>
+                    </div>
+                </div>
+                
+                <!-- Who is a Data Scientist, Anyways? -->
+                <div class="container">
+                    <h3>"Who is a Data Scientist, Anyways?"</h3>
+                    <p>In this interview, the evolving role of data science is explored through the lens of practical application, looking specifically at smaller organizations where human resources are limited and versatility is of utmost importance.</p>
+                    <p>Dominic Coletti of thefire.org provides an incredible perspective on the challenges of implementing data-driven workflows while still keeping the human element central. Though not a practicing data scientist himself, his insights reveal how data literacy is becoming essential across all professional roles.</p>
+                </div>
+            </div>
+
+            <!-- Column 2 -->
+            <div class="column-wrapper">
+                <!-- Data Scientist Continued -->
+                <div class="container">
+                    <h3>"Who is a Data Scientist?" <em>(continued)</em></h3>
+                    <p>As more companies embrace data-driven decision making, they confront a fundamental challenge: defining what "data science" means to them. While not everyone may be a data scientist, data-driven methods are becoming increasingly required to provide companies with the critical edge needed to survive in the Digital Age.</p>
+                    <div class="continuation-box">
+                        <a href="https://github.com/myajean808/portfolio/blob/main/Files/ethnography.pdf" target="_blank">Read the full interview on p. 4</a>
+                    </div>
+                </div>
+                
+                <!-- Open Source Zoltar -->
+                <div class="container">
+                    <h3>"Seek the Future with the Open Source Zoltar!"</h3>
+                    <p>Can algorithmic randomness truly replace human intuition? This virtual tarot reader invites users to explore that question in a fully digital environment, blending technology with the ancient practice of cartomancy.</p>
+                    <p>'Read' by Claude, Anthropic's language model, the application provides interpretations that feel remarkably personalized. The experience raises compelling questions about the nature of meanin-making in virtual environments. </p>
+                    <p> When an algorithm produces insights that resonate emotionally, does the source of that resonance really matter? Can blocks of code truly capture something essential about the human nature of pattern recognition?</p>
+                    <p> Perhaps the real magic isn't in the cards themselves, but in our willingness to ascribe meaning to the places we look ✧ </p>
+                </div>
+            </div>
+
+            <!-- Column 3 -->
+            <div class="column-wrapper">
+                <!-- Virtual Tarot Continued -->
+                <div class="container">
+                    <h3>Virtual Tarot, Continued</h3>
+                    <p> Designed to be fully interactive and beginner-friendly, the virtual tarot reader encourages users to think critically about the role of intuition, randomness, and interpretation in both divination and data analysis.</p>
+                    <div class="continuation-box">
+                        <a href="https://github.com/myajean808/opensource_zoltar" target="_blank">Try it yourself on p. 6</a>
+                    </div>
+                </div>
+
+                <!-- Image with link -->
+                <a href="https://github.com/madiforman/virtual_art_museum" target="_blank" style="text-decoration: none;">
+                    <div class="container container-image">
+                        <img src="https://github.com/myajean808/portfolio/blob/main/Files/mova.png?raw=true" alt="Virtual Art Museum">
+                        <div class="caption">
+                            <a href="https://github.com/madiforman/virtual_art_museum" target="_blank">Step into the MoVA on p. 8 →</a>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- In This Issue -->
+                <div class="container">
+                    <h3>In This Issue</h3>
+                    <p style="font-size: 12px; line-height: 1.8; margin-bottom: 0;">
+                        <strong>Featured Work:</strong><br>
+                        • Self-Sufficiency Standard Tax Calculator<br>
+                        • Open Source Zoltar Refinement<br>
+                        • Upcoming: Op-Ed Commentary<br><br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
